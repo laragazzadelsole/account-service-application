@@ -22,7 +22,7 @@ import com.webage.authentication_service.controller.CustomerFactory;
 import com.webage.authentication_service.domain.Token;
 
 @RestController
-@RequestMapping("/register")
+@RequestMapping("/account/register")
 public class RegisterAPI {
 
 	@PostMapping
