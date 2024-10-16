@@ -35,9 +35,7 @@ public class RegisterAPI {
 		String json_string = CustomerFactory.getCustomerAsJSONString(newCustomer);
 		
 		postNewCustomerToCustomerAPI(json_string);
-		
-		// old code that calls repository directly
-		// newCustomer = repo.save(newCustomer);
+	
 		
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 				.buildAndExpand(newCustomer.getId()).toUri();

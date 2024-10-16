@@ -24,9 +24,9 @@ public class AuthController {
     //     return ResponseEntity.ok(token);
     // }
 
-    @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody Customer customer) {
-        authService.register(customer);
-        return ResponseEntity.ok("Customer registered successfully.");
-    }
+    // @PostMapping("/register")
+    // public ResponseEntity<String> register(@RequestBody Customer customer) {
+    //     authService.register(customer);
+    //     return ResponseEntity.ok("Customer registered successfully.");
+    // }
 }
