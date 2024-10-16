@@ -1,7 +1,9 @@
-package com.webage.authentication_service.domain;
+package com.webage.authentication_service.controller;
 
 
 import org.json.JSONObject;
+
+import com.webage.authentication_service.domain.Customer;
 
 public class CustomerFactory {
 	

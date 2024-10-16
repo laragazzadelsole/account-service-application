@@ -21,6 +21,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-resource-server'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
@@ -28,6 +29,7 @@ dependencies {
 	implementation 'com.auth0:java-jwt:3.18.2'
 	runtimeOnly 'org.hsqldb:hsqldb'
 	implementation 'org.json:json:20211205'
+	implementation 'io.jsonwebtoken:jjwt:0.12.6'
 }
 
 // tasks.named('test') {

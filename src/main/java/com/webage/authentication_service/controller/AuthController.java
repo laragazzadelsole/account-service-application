@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/account")
-public class AccountController {
+public class AuthController {
 
     @Autowired
     private AuthService authService;
@@ -18,11 +18,11 @@ public class AccountController {
         return ResponseEntity.ok("Account service is up and running.");
     }
 
-    @PostMapping("/token")
-    public ResponseEntity<String> getToken(@RequestParam String email, @RequestParam String password) {
-        String token = authService.login(email, password);
-        return ResponseEntity.ok(token);
-    }
+    // @PostMapping("/token")
+    // public ResponseEntity<String> getToken(@RequestParam String email, @RequestParam String password) {
+    //     String token = authService.login(email, password);
+    //     return ResponseEntity.ok(token);
+    // }
 
     @PostMapping("/register")
     public ResponseEntity<String> register(@RequestBody Customer customer) {
@@ -30,4 +30,3 @@ public class AccountController {
         return ResponseEntity.ok("Customer registered successfully.");
     }
 }
-

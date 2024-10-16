@@ -1,8 +1,8 @@
 package com.webage.authentication_service.service;
 
 import com.webage.authentication_service.domain.Customer;
-import com.webage.authentication_service.repository.CustomerRepository;
-import com.webage.authentication_service.util.JWTUtil;
+import com.webage.authentication_service.repository.CustomersRepository;
+import com.webage.authentication_service.config.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.Optional;
 public class AuthService {
 
     @Autowired
-    private CustomerRepository customerRepository;
+    private CustomersRepository customerRepository;
 
     @Autowired
     private JWTUtil jwtUtil;

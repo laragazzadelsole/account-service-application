@@ -1,4 +1,4 @@
-package com.webage.authentication_service.controller;
+package com.webage.authentication_service.api;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.webage.authentication_service.domain.Customer;
-import com.webage.authentication_service.domain.CustomerFactory;
+import com.webage.authentication_service.controller.CustomerFactory;
 import com.webage.authentication_service.domain.Token;
 
 @RestController

@@ -1,6 +1,5 @@
 package com.webage.authentication_service.domain;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -55,4 +54,3 @@ public class Customer {
 	}
 	
 }
-
